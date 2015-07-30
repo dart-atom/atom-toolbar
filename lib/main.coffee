@@ -14,11 +14,11 @@ module.exports =
     @toolbarPanel = atom.workspace.addTopPanel(item: @toolbar)
 
     # Have the command toggle the setting.
-    atom.commands.add 'atom-workspace', 'toolbar:toggle', =>
-      atom.config.set('toolbar.visible', !atom.config.get('toolbar.visible'))
+    atom.commands.add 'atom-workspace', 'atom-toolbar:toggle', =>
+      atom.config.set('atom-toolbar.visible', !atom.config.get('atom-toolbar.visible'))
 
     # Listen to the setting and toggle the view.
-    atom.config.observe 'toolbar.visible', (val) =>
+    atom.config.observe 'atom-toolbar.visible', (val) =>
       if val
         @toolbarPanel.show()
       else

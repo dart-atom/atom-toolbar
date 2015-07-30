@@ -1,17 +1,17 @@
-# Toolbar package
+# `atom-toolbar` package
 
 Displays a configurable toolbar at the top of the workspace.
 
 ## API
 
 This package provides a service that you can use in other Atom packages. To use
-it, include `toolbar` in the `consumedServices` section of your `package.json`:
+it, include `atom-toolbar` in the `consumedServices` section of your `package.json`:
 
 ```json
 {
   "name": "my-package",
   "consumedServices": {
-    "toolbar": {
+    "atom-toolbar": {
       "versions": {
         "^1.0.0": "consumeToolbar"
       }
@@ -35,7 +35,7 @@ module.exports =
     @toolbarTile = null
 ```
 
-The `toolbar` API has four methods:
+The `atom-toolbar` API has four methods:
 
   * `addLeftTile({ item, priority })` - Add a tile to the left side of the
   toolbar. Lower priority tiles are placed further to the left.

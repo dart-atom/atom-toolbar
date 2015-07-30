@@ -1,9 +1,9 @@
 {
-  "name": "toolbar",
+  "name": "atom-toolbar",
   "version": "0.1.0",
   "main": "./lib/main",
   "description": "Displays a configurable toolbar at the top of the workspace.",
-  "repository": "https://github.com/dart-atom/toolbar",
+  "repository": "https://github.com/dart-atom/atom-toolbar",
   "license": "MIT",
   "engines": {
     "atom": "*"
@@ -13,7 +13,7 @@
     "atom-space-pen-views": "^2.0.0"
   },
   "providedServices": {
-    "toolbar": {
+    "atom-toolbar": {
       "description": "A container for UI elements at the top of the workspace",
       "versions": {
         "1.0.0": "provideToolbar"
