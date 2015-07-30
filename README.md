@@ -1,4 +1,4 @@
-# `atom-toolbar` package
+# atom-toolbar package
 
 Displays a configurable toolbar at the top of the workspace.
 
