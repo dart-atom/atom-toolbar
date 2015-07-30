@@ -1,24 +1,22 @@
 {
-  "name": "status-bar",
-  "version": "0.76.0",
+  "name": "toolbar",
+  "version": "0.1.0",
   "main": "./lib/main",
-  "description": "Display information about the current editor such as cursor position, file path, grammar, current branch, ahead/behind commits counts, and line diff count.",
-  "repository": "https://github.com/atom/status-bar",
+  "description": "Displays a configurable toolbar at the top of the workspace.",
+  "repository": "https://github.com/dart-atom/toolbar",
   "license": "MIT",
   "engines": {
     "atom": "*"
   },
   "dependencies": {
     "fs-plus": "^2.0.0",
-    "grim": "^1.0.0",
     "atom-space-pen-views": "^2.0.0"
   },
   "providedServices": {
-    "status-bar": {
-      "description": "A container for indicators at the bottom of the workspace",
+    "toolbar": {
+      "description": "A container for UI elements at the top of the workspace",
       "versions": {
-        "1.0.0": "provideStatusBar",
-        "0.58.0": "legacyProvideStatusBar"
+        "1.0.0": "provideToolbar"
       }
     }
   },

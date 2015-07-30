@@ -1,3 +1,5 @@
+Copyright 2015, the dart-atom/toolbar project authors.
+
 Copyright (c) 2014 GitHub Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining
