@@ -55,6 +55,18 @@ tool-bar {
     }
   }
 
+  .tool-bar-left,
+  .tool-bar-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    select {
+      height: 26px;
+      width: 200px;
+    }
+  }
+
   // Limit inline-blocks from getting too long
   .inline-block {
     max-width: 20vw;
