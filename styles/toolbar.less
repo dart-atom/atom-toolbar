@@ -2,10 +2,8 @@
 @import "octicon-mixins";
 
 tool-bar {
-  display: block;
+  display: flex;
   font-size: 11px;
-  line-height: 40px;
-  height: 40px;
   position: relative;
   -webkit-user-select: none;
   cursor: default;
@@ -13,20 +11,11 @@ tool-bar {
   white-space: nowrap;
   min-width: -webkit-min-content;
   border-bottom: 1px solid @tool-panel-border-color;
+  padding: 6px @component-padding;
+  min-height: 40px;
 
   a, a:hover {
     color: @text-color;
-  }
-
-  .flexbox-repaint-hack {
-    padding: 0 @component-line-height/2;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
   }
 
   // Use 1/3 of space -> will get cut-off first when narrow
@@ -62,7 +51,6 @@ tool-bar {
     align-items: center;
 
     select {
-      height: 26px;
       width: 200px;
     }
   }
@@ -78,5 +66,16 @@ tool-bar {
   .icon:before {
     top: 1px;
     margin-right: 0px;
+  }
+}
+
+body.platform-darwin {
+  tool-bar {
+    .tool-bar-left,
+    .tool-bar-right {
+      select {
+        height: 26px;
+      }
+    }
   }
 }
