@@ -1,6 +1,9 @@
 # Changelog
 
 ## 0.1.3
+- Add more flexbox layout directives to the toolbar
+
+## 0.1.3
 - Adjust toolbar layout css to better support mixed-height items
 
 ## 0.1.2
