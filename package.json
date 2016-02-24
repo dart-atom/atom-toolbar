@@ -1,6 +1,6 @@
 {
   "name": "atom-toolbar",
-  "version": "0.1.3",
+  "version": "0.1.2",
   "main": "./lib/main",
   "description": "Displays a configurable toolbar at the top of the workspace.",
   "repository": "https://github.com/dart-atom/atom-toolbar",
