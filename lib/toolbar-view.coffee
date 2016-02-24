@@ -6,17 +6,13 @@ class ToolbarView extends HTMLElement
   createdCallback: ->
     @classList.add('toolbar')
 
-    flexboxHackElement = document.createElement('div')
-    flexboxHackElement.classList.add('flexbox-repaint-hack')
-    @appendChild(flexboxHackElement)
-
     @leftPanel = document.createElement('div')
     @leftPanel.classList.add('tool-bar-left')
-    flexboxHackElement.appendChild(@leftPanel)
+    @appendChild(@leftPanel)
 
     @rightPanel = document.createElement('div')
     @rightPanel.classList.add('tool-bar-right')
-    flexboxHackElement.appendChild(@rightPanel)
+    @appendChild(@rightPanel)
 
     @leftTiles = []
     @rightTiles = []
