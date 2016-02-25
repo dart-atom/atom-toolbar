@@ -19,6 +19,17 @@ tool-bar {
     color: @text-color;
   }
 
+  .flexbox-repaint-hack {		
+     padding: 0 @component-line-height/2;		
+     position: absolute;		
+     top: 0;		
+     right: 0;		
+     bottom: 0;		
+     left: 0;		
+     display: flex;		
+     justify-content: space-between;		
+   }
+
   // Use 1/3 of space -> will get cut-off first when narrow
   .tool-bar-left {
     flex: 1 1 33%;
