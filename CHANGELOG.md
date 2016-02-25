@@ -1,6 +1,9 @@
 # Changelog
 
-## 0.1.3
+## 0.1.5
+- Revert some styling changes
+
+## 0.1.4
 - Add more flexbox layout directives to the toolbar
 
 ## 0.1.3
