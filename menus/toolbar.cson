@@ -1,0 +1,8 @@
+'menu': [
+  {
+    label: 'View'
+    submenu: [
+      { label: 'Toggle Toolbar', command: 'atom-toolbar:toggle'}
+    ]
+  }
+]
