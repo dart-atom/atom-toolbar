@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.6
+- Add a menu item to toggle the toolbar
+
 ## 0.1.5
 - Revert some styling changes
 
